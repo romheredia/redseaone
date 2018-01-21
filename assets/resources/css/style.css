@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background: darkred;
 }
 
 .navbar-default {
@@ -21,23 +22,6 @@ header {
     min-height: 400px;
 }
 
-/*** liveaboard Content ***/
-
-#liveaboard {
-    background-image: url('../images/liveaboard-bg.jpg');
-    background-repeat: no-repeat;
-
-}
-
-#about {
-    padding: 80px 0;
-}
-
-#liveaboard-gallery {
-    background: darkred;
-    padding: 80px 0 160px;
-}
-
 footer {
     padding: "70px 0";
     color: #b7bdc0;
@@ -45,16 +29,58 @@ footer {
     background-color: #323844;
     padding: 25px 0;
 }
+/*** liveaboard Content ***/
+
+#liveaboard {
+    background-image: url('../images/liveaboard-bg.jpg');
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+#about {
+    background: white;
+    padding: 80px 0;
+}
+
+#liveaboard-gallery {
+    padding: 80px 0 160px;
+}
+
+
 
 
 /*** Marsa Alam Content ***/
 #marsa-alam {
     background-image: url('../images/marsa-alam-bg.jpg');
     background-repeat: no-repeat;
-
+    margin-bottom: 40px;
 }
 
 #marsa-alam-map {
     min-height: 400px;
 }
+
+/*** Contact Content ***/
+#contact {
+    background-image: url('../images/contact-bg.jpg');
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+#contact-info {
+    background: white;
+    padding: 80px 0 160px;
+
+}
+
+#contact-form {
+    padding: 80px 0 160px 0;
+    background-image: url('../images/contact-form-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+#contact-form h2 {
+    color: azure;
+}
+
 /*** Bootstrap Override ***/
