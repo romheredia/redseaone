@@ -10,6 +10,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.php">Home</a>
                 <a class="nav-item nav-link" href="liveaboard.php">LiveAboard</a>
                 <a class="nav-item nav-link" href="marsa-alam.php">Marsa Alam</a>
                 <a class="nav-item nav-link" href="#">Spots</a>
