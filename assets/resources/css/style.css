@@ -30,10 +30,9 @@ footer {
     padding: 25px 0;
 }
 
-/*** liveaboard Content ***/
-
+/*** Home Content ***/
 #home {
-    background-image: url('../images/liveaboard-bg.jpg');
+    background-image: url('../images/home-bg.jpg');
     background-repeat: no-repeat;
     margin-bottom: 40px;
 }
@@ -42,6 +41,49 @@ footer {
     background: white;
     padding: 80px 0;
 }
+
+#home-gallery {
+    background: #dddddd;
+    padding: 40px 0;
+}
+
+#home-gallery .img-thumbnail{
+    border-radius: 0;
+    background-color: unset;
+    border: none;
+    padding: 0;
+    box-shadow: 4px 4px 18px #333333;
+}
+
+#promo {
+    padding: 40px 0;
+}
+
+#diving-with-us {
+    min-height: 400px;
+    padding: 40px;
+    background: #dddddd;
+}
+
+#book-now {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+#book-now.btn.btn-primary {
+    border-radius: 0;
+}
+
+/*** liveaboard Content ***/
+
+#home {
+    background-image: url('../images/liveaboard-bg.jpg');
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+
 
 /*** liveaboard Content ***/
 

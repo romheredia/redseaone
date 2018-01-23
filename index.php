@@ -14,7 +14,7 @@
 
     <header id="home">
         <div class="container">
-
+            Carousel
         </div>
     </header>
 
@@ -30,6 +30,40 @@
                 </p>
         </div>
     </section>
+
+    <section id="home-gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/resources/images/home-gallery-1.jpg" class="img-thumbnail img-fluid">
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/resources/images/home-gallery-2.jpg" class="img-thumbnail img-fluid">
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid">
+                </div>
+            </div>
+        </container>
+    </section>
+
+    
+    <section id="promo">
+        <div class="container">
+            <h2>Promo</h2>
+        </div>
+    </section>
+
+    <section id="diving-with-us">
+        <div class="container">
+            <h2>Diving with us</h2>
+        </div>
+    </section>
+
+    
+
+
+    <button type="button" id="book-now" class="btn btn-primary">Book Now!</button>
 
     <?php include 'footer.php'; ?>
 
