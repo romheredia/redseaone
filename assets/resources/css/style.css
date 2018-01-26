@@ -1,11 +1,67 @@
+/* @font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../resources/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT_Sans', sans-serif;
+    src: url('assets/resources/fonts/PT_Sans/PT_Sans-Web-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT Serif', sans-serif;
+    src: url('assets/resources/fonts/PT_Serif/PT_Serif-Web-Regular.ttf');
+} */
+
+/* 
+
+font-family: 'PT Serif', serif;
+
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Lato', sans-serif;
+ */
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'PT Sans', serif;
+    margin-bottom: .75rem;
+    font-weight: 700;
+
+}
+
 html, body {
   height: 100%;
   width: 100%;
-  background: darkred;
+  font-family: 'Roboto', sans-serif;
 }
 
-.navbar-default {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+.navbar {
+    background: white;
+    
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.navbar-nav a {
+    color: #333333;
 }
 
 .hr {
@@ -14,37 +70,55 @@ html, body {
 
 #page-header {
     padding: 10px 0;
-    color: azure;
-    background: #323844;
+    color: black;
+    background: azure;
 }
 
 header {
-    min-height: 400px;
+    /* min-height: 400px; */
 }
 
 footer {
     padding: "70px 0";
-    color: #b7bdc0;
     font-size: "1.2em";
     background-color: #323844;
     padding: 25px 0;
 }
 
+footer a {
+    color: #b7bdc0;
+}
+
+footer a:hover {
+    color: #566074;
+    text-decoration: unset;
+}
+
 /*** Home Content ***/
 #home {
-    background-image: url('../images/home-bg.jpg');
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+    /* background-image: url('../images/home-bg.jpg');
+    background-repeat: no-repeat; */
+    /* margin-bottom: 20px; */
+}
+
+#header-text {
+    position: absolute;
 }
 
 #about-us {
+    text-align: center;
     background: white;
-    padding: 80px 0;
+    padding: 6rem 0;
+}
+
+#about-us h5 {
+    color: #dc0000;
+    margin-bottom: 3rem; 
 }
 
 #home-gallery {
-    background: #dddddd;
-    padding: 40px 0;
+    background: #efefef;
+    padding: 2rem 0;
 }
 
 #home-gallery .img-thumbnail{
@@ -52,17 +126,20 @@ footer {
     background-color: unset;
     border: none;
     padding: 0;
-    box-shadow: 4px 4px 18px #333333;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 6px #3333336e;
 }
 
 #promo {
-    padding: 40px 0;
+    min-height: 200px;
 }
 
 #diving-with-us {
+    background-image: url('../images/diving-with-us.jpg');
+    background-repeat: no-repeat;
     min-height: 400px;
     padding: 40px;
-    background: #dddddd;
+    color: azure;
 }
 
 #book-now {
@@ -72,17 +149,9 @@ footer {
 }
 
 #book-now.btn.btn-primary {
-    border-radius: 0;
+    /* border-radius: 20; */
+    box-shadow: 2px 2px 6px #3333336e;
 }
-
-/*** liveaboard Content ***/
-
-#home {
-    background-image: url('../images/liveaboard-bg.jpg');
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
-}
-
 
 
 /*** liveaboard Content ***/
@@ -90,7 +159,7 @@ footer {
 #liveaboard {
     background-image: url('../images/liveaboard-bg.jpg');
     background-repeat: no-repeat;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #about {
@@ -107,9 +176,9 @@ footer {
 
 /*** Marsa Alam Content ***/
 #marsa-alam {
-    background-image: url('../images/marsa-alam-bg.jpg');
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+    /* background-image: url('../images/marsa-alam-bg.jpg');
+    background-repeat: no-repeat; */
+    /* margin-bottom: 20px; */
 }
 
 #marsa-alam-map {
@@ -120,7 +189,7 @@ footer {
 #contact {
     background-image: url('../images/contact-bg.jpg');
     background-repeat: no-repeat;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #contact-info {

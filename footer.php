@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <ul>
-                    <li>LiveAboard</li>
-                    <li>Marsa Alam</li>
-                    <li>Spots</li>
-                    <li>Schedule</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#">LiveAboard</a></li>
+                    <li class="nav-item"><a href="#">Marsa Alam</a></li>
+                    <li><a href="#">Spots</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -28,7 +28,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 hr">
-                <p>&copy; 2018 Red Sea One. All Rights Reserved.</p>
+                <span class="copyright">&copy; 2018 Red Sea One. All Rights Reserved.</span>
             </div>
         </div>
     </div>

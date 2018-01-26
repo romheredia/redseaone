@@ -13,8 +13,25 @@
     </section>
 
     <header id="marsa-alam">
-        <div class="container">
+        <div id="marsa-alam-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#marsa-alam-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#marsa-alam-carousel" data-slide-to="1"></li>
+                <li data-target="#marsa-alam-carousel" data-slide-to="2"></li>
+            </ol>
 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/resources/images/marsa-alam-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/resources/images/marsa-alam-2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/resources/images/marsa-alam-3.jpg" alt="Third slide">
+                </div>
+            </div>
+            
         </div>
     </header>
 
@@ -47,7 +64,6 @@
                 sit amet, tempor non nibh.
             </p>
         </div>
-        </div>
 
     </section>
 
@@ -63,7 +79,7 @@
             }
         </script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?callback=mapMarsaAlam"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUueozpyVIZ7xt0e-qJIO2SmlIV37hL4&callback=mapMarsaAlam"></script>
     </section>
 
     <?php include 'footer.php' ?>

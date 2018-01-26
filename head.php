@@ -17,7 +17,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
     <!-- Custom Font -->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans|PT+Serif|Roboto" rel="stylesheet"> 
 
     <title>Red Sea One</title>
 </head>
