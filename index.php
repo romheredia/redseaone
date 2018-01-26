@@ -36,8 +36,10 @@
 
     <section id="about-us">
         <div class="container">
-            <h1>About Us</h1>
-            <h5>Explore the Red Sea One</h5>
+            <h5>ABOUT US</h5>
+            <h1>EXPLORE THE RED SEA ONE</h1>
+
+            
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at malesuada libero, eget cursus eros. Vivamus
                 in bibendum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
