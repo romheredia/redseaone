@@ -1,105 +1,173 @@
-<!DOCTYPE html>
 <html>
 
-<?php include 'head.php'; ?>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <title>Red Sea One</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/resources/css/style-old.css">
+
+    <style>
+
+        body {
+            background-image: url("assets/resources/images/turtle.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+            position: relative;
+        }
+
+        .pageone .logo img {
+            height: 100px;
+        }
+
+        .h1 {
+            font-weight: lighter;
+            font-size: 26px;
+            letter-spacing: 15px;
+            margin-right: -15px;
+            color: #fff;
+        }
+        .h2 {
+            font-size: 20px;
+        }
+        .pageone a {
+        }
+
+        .link-board {
+            max-width: 657px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 15px;
+        }
+        .link-board > li {
+            flex-basis: 47%;
+            position: relative;
+        }
+        .link-board > .fluid {
+            flex-basis: 100%;
+            margin: 8px 0;
+        }
+            .link-board > li > div {
+                display: block;
+                width: 100%;
+                padding-bottom: 75%;
+                background-color: rgba(146, 146, 146, 0.54);
+                position: relative;
+            }
+            .link-board > li > div > div,
+            .link-board > li > div > a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .link-board .link-board-box-bg {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 140%;
+                    opacity: 0;
+                    transition: all 0.3s;
+                }
+                .link-board > li:hover .link-board-box-bg {
+                    background-size: 120%;
+                    opacity: 0.54;
+                }
+            .link-board > li > div > a > label {
+                font-weight: lighter;
+                font-size: 28px;
+                letter-spacing: 15px;
+                margin-right: -15px;
+                color: #484848;
+                color: #2b2b2b;
+                cursor: pointer;
+                font-size: 14px;
+                letter-spacing: 6px;
+            }
+
+            #video-bg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .link-board-container {
+                display: none;
+            }
+
+            @media only screen and (min-width: 500px) {
+
+                .link-board > li > div > a > label {
+                    font-size: 20px;
+                    letter-spacing: 10px;
+                }
+
+            }
+
+            @media only screen and (min-width: 600px) {
+
+                .link-board > li > div > a > label {
+                    font-size: 28px;
+                    letter-spacing: 15px;
+                }
+
+            }
+    </style>
+</head>
 
 <body>
-    <?php include 'nav.php'; ?>
+    <video id="video-bg" autoplay poster="assets/resources/images/turtle.jpg" onended="this.autoplay=false;this.load();">
+        <source src="assets/resources/videos/homepage.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <!-- <section id="page-header">
-        <div class="container">
-            <h1>Home</h1>
-        </div>
-    </section> -->
+    <nav class="link-board-container">
+        <ul class="unbulleted link-board">
+            <li><div>
+                    <div class="link-board-box-bg" style="background-image: url('{!! helper_content(1, 'Button Image 1') !!}');"></div>
+                    <a href="home.php"><label>RED<br/>SEA<br/>ONE</label></a>
+                </div>
+            </li>
+            <li><div>
+                    <!-- <div class="link-board-box-bg" style="background-image: url('{!! helper_content(1, 'Button Image 2') !!}');"></div> -->
+                    <a href="schedule.php"><label>SCHEDULE</label></a>
+                </div>
+            </li>
+            <li class="fluid">
+                <h1 class="h1 center">EXPLORING THE RED SEA</h1>
+            </li>
+            <li><div>
+                    <!-- <div class="link-board-box-bg" style="background-image: url('{!! helper_content(1, 'Button Image 3') !!}');"></div> -->
+                    <a href="spots.php"><label>DIVE<br/>SPOTS</label></a>
+                </div>
+            </li>
+            <li><div>
+                    <!-- <div class="link-board-box-bg" style="background-image: url('{!! helper_content(1, 'Button Image 4') !!}');"></div> -->
+                    <a href="gallery.php"><label>GALLERY</label></a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-    <header id="home">
-        <div id="home-carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#home-carousel" data-slide-to="1"></li>
-                <li data-target="#home-carousel" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/resources/images/home-1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/resources/images/home-2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/resources/images/home-3.jpg" alt="Third slide">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="about-us">
-        <div class="container">
-            <h5>ABOUT US</h5>
-            <h1>EXPLORE THE RED SEA ONE</h1>
-
-            
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at malesuada libero, eget cursus eros. Vivamus
-                in bibendum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                Morbi nec pretium nunc, in molestie felis. Aliquam finibus erat felis, pellentesque lobortis augue fringilla
-                sit amet. Praesent ornare facilisis mattis. Integer fringilla lacus a orci laoreet lobortis vel nec ligula.
-                Curabitur ut elementum mauris.
-                </p>
-        </div>
-    </section>
-
-    <section id="home-gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-1.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-2.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-1.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-2.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid">
-                </div>
-            </div>
-        </container>
-    </section>
-
-    
-    <section id="promo">
-        <div class="container">
-            <h2>Promo</h2>
-        </div>
-    </section>
-
-    <section id="diving-with-us">
-        <div class="container">
-            <h2>Diving with us</h2>
-        </div>
-    </section>
-
-    <button type="button" id="book-now" class="btn btn-primary btn-lg">Book Now!</button>
-
-    <?php include 'footer.php'; ?>
-
+    <script src="assets/resources/js/jquery.min.js"></script>
+    <script src="assets/resources/js/velocity.min.js"></script>
+    <script src="assets/resources/js/script.js"></script>
 </body>
-
 </html>

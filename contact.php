@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html>
+<?php include 'layouts/head.php'; ?>
 
-<?php include 'head.php'; ?>
+<?php include 'layouts/main_menu.php'; ?>
+<header id="contact">
+    
+</header>
 
-<body>
-    <?php include 'nav.php'; ?>
+<section id="contact-text">
+    <div class="container">
+    <h2>Contact Us</h2>
+    </div>
+</section>
 
-    <section id="page-header">
+<section id="contact-form">
         <div class="container">
-            <h1>Contact Us</h1>
-        </div>
-    </section>
-
-    <header id="contact">
-
-    </header>
-
-    <section id="contact-info">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-        </div>
-    </section>
-
-    <section id="contact-form">
-        <div class="container">
+           
             <h2>Got any questions?</h2>
-            <form class="container-fluid">
+            <form class="form-container container-fluid">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Full Name">
                 </div>
@@ -45,10 +31,6 @@
                 <button type="submit" class="btn btn-info ">Send Message</button>
             </form>
         </div>
-    </section>
+</section>
 
-    <?php include 'footer.php';?>
-
-</body>
-
-</html>
+<?php include 'layouts/footer.php'; ?>
