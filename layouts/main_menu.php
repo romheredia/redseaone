@@ -4,7 +4,7 @@
 
         </div>
             <div class="col-lg-4 text-center">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+                <a class="navbar-brand" href="home.php">
                     <img src="assets/resources/images/red-sea-one-logo.png" height="60px">
                 </a>
             </div>
