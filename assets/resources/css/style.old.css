@@ -1,0 +1,344 @@
+/* @font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../resources/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT_Sans', sans-serif;
+    src: url('assets/resources/fonts/PT_Sans/PT_Sans-Web-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT Serif', sans-serif;
+    src: url('assets/resources/fonts/PT_Serif/PT_Serif-Web-Regular.ttf');
+} */
+
+/* 
+
+font-family: 'PT Serif', serif;
+
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Lato', sans-serif;
+ */
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'PT Sans', serif;
+    margin-bottom: .75rem;
+    font-weight: 700;
+
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+
+header {
+    background: #ffffff;
+}
+
+.navbar {
+    padding: 0;
+    box-shadow: 0px 2px 4px #3333336e;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.navbar-nav {
+    width: 80%;
+}
+
+.navbar-nav a,
+.navbar-nav a:after,
+.navbar-nav a:before {
+    font-size: 16px;
+    font-weight: 600;
+    color: #818181;
+    transition: all .75s;
+}
+
+.navbar-nav a:hover {
+    color: #3333336e;
+    background: rgb(255, 220, 220);
+}
+
+#login-btn {
+    font-weight: 600;
+    border-radius: 1.5rem;
+    padding: 4px 24px;
+    margin: 1.25rem 1.5rem;
+}
+
+#page-header {
+    padding: 10px 0;
+    color: black;
+    background: azure;
+}
+
+.section-title {
+    margin: 1.5rem 0 4rem;
+    text-align: center;
+}
+
+i.fas, i.far {
+    margin-right: 20px;
+}
+
+.card-title {
+    margin: 1rem 0;
+}
+
+.card-title-text {
+    font-size: 24px;
+    font-weight: 800px;
+}
+
+.card-title .fas.fa-ship{
+    color: #17a2b8;
+}
+
+.card-title .fas.fa-location-arrow{
+    color: #dc3545;
+}
+
+.card-title .far.fa-calendar-alt{
+    color: #8bc027;
+}
+
+footer {
+    padding: 80px 0 20px;
+    font-size: "1.2em";
+    background-color: #323844;
+    color: #b7bdc0;
+}
+
+footer a {
+    color: #b7bdc0;
+}
+
+footer a:hover {
+    color: #566074;
+    text-decoration: unset;
+}
+
+#copyright {
+    border-top:1px solid #566074;
+    margin-top: 60px;
+}
+
+
+/*** Home Content ***/
+#home {
+    /* background-image: url('../images/home-bg.jpg');
+    background-repeat: no-repeat; */
+    /* margin-bottom: 20px; */
+}
+
+#header-text {
+    position: absolute;
+}
+
+#about-us {
+    text-align: left;
+    background: white;
+    padding: 6rem 0;
+}
+
+#about-us h5 {
+    color: #dc0000;
+    margin: 0;
+}
+
+#about-us h1 {
+    letter-spacing: .15rem;
+}
+
+#about-us p {
+    line-height: 2rem;
+}
+
+#home-gallery {
+    background: linear-gradient(#efefef, #ffffff , #efefef);
+    padding: 2rem 0;
+}
+
+#home-gallery .img-thumbnail {
+    border-radius: 0;
+    position: relative;
+    background-color: unset;
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+    box-shadow: 1px 1px 4px #3333336e;
+    transition: .4s;
+}
+
+#home-gallery .img-thumbnail:hover {
+    opacity: 1;
+    box-shadow: 1px 1px 12px #3333336e;
+}
+
+#diving-with-us {
+    /* background-image: url('../images/diving-with-us.jpg');
+    background-repeat: no-repeat; */
+    min-height: 400px;
+    padding: 40px;
+    margin-bottom: 8rem;
+    /* color: azure; */
+}
+
+#home-filler {
+    background-image: url('../images/diving-with-us.jpg');
+    background-repeat: no-repeat;
+    min-height: 200px;
+    padding: 40px;
+}
+
+#promo {
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #cccccc;
+}
+
+.promo-code {
+    color: #dc0000;
+}
+
+
+#book-now {
+    font-weight: 600;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+#book-now.btn.btn-info {
+    /* border-radius: 20; */
+    padding: 4px 24px;
+    box-shadow: 2px 2px 6px #3333336e;
+}
+
+
+/*** liveaboard Content ***/
+
+#liveaboard {
+    margin-top: 110px;
+}
+
+#about-rso {
+    background: white;
+    padding: 80px 0;
+}
+
+#deck-plan {
+}
+
+#liveaboard-gallery {
+    padding: 80px 0 160px;
+}
+
+
+/*** Marsa Alam Content ***/
+#marsa-alam {
+    margin-top: 110px;
+}
+
+#about-marsa-alam {
+    background: white;
+    padding: 80px 0;
+}
+
+#marsa-alam-map {
+    min-height: 400px;
+}
+
+
+/*** Diving Spots ***/
+#diving-spots {
+    margin-top: 110px;
+}
+
+#about-diving-spots {
+    padding: 40px 0 20px;
+}
+
+#contact-form {
+    padding: 80px 0 120px;
+    color: #ffffff;
+    background: #566074;
+}
+#contact-form .container-fluid{
+    padding: 0;
+}
+
+
+/*** Gallery ***/
+#gallery {
+    margin-top: 110px;
+}
+
+#gallery-text {
+    padding: 40px 0 20px;
+}
+
+#photo-gallery {
+    padding: 80px 0;
+}
+
+/*** Schedule ***/
+#schedule {
+    margin-top: 110px;
+}
+
+#schedule-text {
+    padding: 40px 0 20px;
+}
+
+#schedule-list {
+    padding: 80px 0;
+}
+
+
+
+/*** Contact Content ***/
+#contact {
+    margin-top: 110px;
+}
+
+#contact-text {
+    padding: 40px 0 20px;
+}
+
+#contact-form {
+    padding: 80px 0 120px;
+    color: #ffffff;
+    background: #566074;
+}
+#contact-form .container-fluid{
+    padding: 0;
+}
+
+
+
+/*** Bootstrap Override ***/

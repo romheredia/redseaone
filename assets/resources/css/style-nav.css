@@ -1,0 +1,99 @@
+/*** Nav Menu ***/
+
+.navbar {
+    padding: 0;
+    box-shadow: 0px 2px 4px #3333336e;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-light .navbar-toggler {
+    color:#646464;
+    border: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 700;
+    color: #646464;
+}
+
+.nav-list {
+    border-bottom: 2px solid #efefef;
+}
+    
+
+.nav-list:hover{
+    background: #ececec;
+    -webkit-transition: background-color 0.75s ease;
+    -ms-transition: background-color 0.75s ease;
+    transition: background-color 0.75s ease;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: rgb(220, 0, 0);
+    height: 4px;
+
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+    -webkit-transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    
+}
+
+.nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+    left: 0;
+    right: 0;
+}
+
+#login-btn {
+    border: 2px solid #efefef;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    padding: 4px 24px;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+#login-btn:hover {
+    border: 2px solid #999999;
+}
+
+@media (min-width:992px) {
+    .nav-list {
+        border-bottom: none;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 .5rem;
+    }
+
+    #login-btn {
+        margin: 1rem 2rem;
+    }
+}
+
+
+
+

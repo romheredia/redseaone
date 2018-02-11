@@ -3,7 +3,7 @@
 <?php include 'layouts/main_menu.php'; ?>
 
 <header id="marsa-alam">
-<div id="marsa-alam-carousel" class="carousel slide" data-ride="carousel">
+<div id="marsa-alam-carousel" class="carousel carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#marsa-alam-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#marsa-alam-carousel" data-slide-to="1"></li>
@@ -29,6 +29,7 @@
 
 <div class="container">
     <h2>About Marsa Alam</h2>
+    <svg width="160" height="6"><rect width="160" height="6" style="fill:rgb(210,0,0)" /></svg> 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at malesuada libero, eget cursus eros. Vivamus
         in bibendum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
         Morbi nec pretium nunc, in molestie felis. Aliquam finibus erat felis, pellentesque lobortis augue fringilla
@@ -55,6 +56,39 @@
     </p>
 </div>
 
+</section>
+
+<section id="image-gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-1.jpg"><img src="assets/resources/images/home-gallery-1.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-2.jpg"><img src="assets/resources/images/home-gallery-2.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-3.jpg"><img src="assets/resources/images/home-gallery-3.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-4.jpg"><img src="assets/resources/images/home-gallery-4.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-5.jpg"><img src="assets/resources/images/home-gallery-5.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-6.jpg"><img src="assets/resources/images/home-gallery-6.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-7.jpg"><img src="assets/resources/images/home-gallery-7.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+            <div class="col-lg-3">
+                <a href="assets/resources/images/home-gallery-8.jpg"><img src="assets/resources/images/home-gallery-8.jpg" class="img-thumbnail img-fluid"></a>
+            </div>
+        </div>
+    </container>
 </section>
 
 <section id="marsa-alam-map">

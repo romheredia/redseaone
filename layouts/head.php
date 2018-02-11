@@ -35,8 +35,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/resources/css/slick.css">
     <link rel="stylesheet" href="assets/resources/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/resources/plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/resources/plugins/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/resources/css/simpleLightbox.min.css">
     <link rel="stylesheet" href="assets/resources/css/font.css">
 
+    <link rel="stylesheet" href="assets/resources/css/style.css">
+    <link rel="stylesheet" href="assets/resources/css/style-nav.css">
+    <link rel="stylesheet" href="assets/resources/css/style-home.css">
+    <link rel="stylesheet" href="assets/resources/css/style-liveaboard.css">
+    <link rel="stylesheet" href="assets/resources/css/style-marsa-alam.css">
+    <link rel="stylesheet" href="assets/resources/css/style-footer.css">
+    
 </head>
 <body>
